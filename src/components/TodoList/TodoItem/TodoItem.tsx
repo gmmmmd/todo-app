@@ -9,7 +9,7 @@ interface TodoItemProps {
   todo: Todo,
   checkTodo: (id: Todo['id'])  => void,
   deleteTodo: (id: Todo['id']) => void;
-}
+};
 
 const TodoItem: React.FC<TodoItemProps> = ({ todo, checkTodo, deleteTodo }) => {
   const className = todo.checked ? `${styles.TodoItem__title} ${styles.TodoItem__title_checked}` : `${styles.TodoItem__title}`
@@ -22,6 +22,6 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, checkTodo, deleteTodo }) => {
       <Button color='red' onClick={() => deleteTodo(todo.id)}>Delete</Button>
     </div>
   );
-}
+};
 
 export default TodoItem;

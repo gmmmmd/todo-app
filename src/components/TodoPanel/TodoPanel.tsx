@@ -4,25 +4,14 @@ import styles from './TodoPanel.module.scss';
 
 import Button from '../Button/Button';
 
-import { Todo } from '../../types/types';
+import { useTodo } from '../../utils';
 
 const DEFAULT_TODO = {
   name: ''
 };
 
-interface TodoPanelProps {
-  addTodo: ({name}: Omit<Todo, 'checked' | 'id'>) => void;
-  setAllTasks: () => void;
-  setActiveTasks: () => void;
-  setCompletedTasks: () => void;
-};
-
-const TodoPanel: React.FC<TodoPanelProps> = ({ 
-  addTodo, 
-  setAllTasks, 
-  setActiveTasks, 
-  setCompletedTasks 
-}) => {
+const TodoPanel: React.FC = () => {
+  const { addTodo, setAllTasks, setActiveTasks, setCompletedTasks } = useTodo()
   const [todo, setTodo] = useState(DEFAULT_TODO);
   
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -57,6 +46,6 @@ const TodoPanel: React.FC<TodoPanelProps> = ({
       </div>
     </div>
   );
-}
+};
 
 export default TodoPanel;
