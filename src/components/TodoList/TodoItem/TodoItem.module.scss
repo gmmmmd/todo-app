@@ -1,0 +1,19 @@
+.TodoItem {
+  background-color: white;
+  box-shadow: 0 8px 11px 5px rgba(34, 60, 80, 0.09);
+  margin-bottom: 15px;
+  padding: 25px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    &_checked {
+      opacity: 0.5;
+      text-decoration: line-through;
+    }
+  }
+}
