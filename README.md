@@ -1,3 +1,3 @@
-## npm i && npm run start
+npm i && npm run start
 
-[deployment](https://todoapp-pied.vercel.app/)
+### [deployment in vercel](https://todoapp-pied.vercel.app/)
