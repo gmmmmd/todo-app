@@ -1,3 +1,8 @@
-npm i && npm run start
+<h1 align="center">npm i && npm run start</h1>
 
-### [deployment in vercel](https://todoapp-pied.vercel.app/)
+<p align="center">
+  <a href="https://todoapp-pied.vercel.app/">deployment in vercel</a>
+</p>
+
+![App screenshot](./todoapp.png)
+
